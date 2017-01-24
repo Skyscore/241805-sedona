@@ -24,9 +24,9 @@
 
   <main class="container">
 
-    <section class="options">
-      <form class="options-form" action="#" method="get">
-        <div class="options-form-infrastructure">
+    <section class="filters">
+      <form class="filters-form" action="#" method="get">
+        <div class="filters-form-infrastructure">
           <h2>Инфраструктура:</h2>
           <input type="checkbox" checked id="pool" name="pool">
           <label for="pool">Бассейн</label>
@@ -35,7 +35,7 @@
           <input type="checkbox" id="wifi" name="wifi">
           <label for="wifi">Wi-Fi</label>
         </div>
-        <div class="options-form-type">
+        <div class="filters-form-type">
           <h2>Тип жилья:</h2>
           <input type="checkbox" checked id="hotel" name="hotel">
           <label for="hotel">Гостиница</label>
@@ -44,13 +44,13 @@
           <input type="checkbox" checked id="apartment" name="apartment">
           <label for="apartment">Апартаменты</label>
         </div>
-        <div class="options-form-price">
+        <div class="filters-form-price">
           <h2>Стоимость в сутки:</h2>
-          <div class="options-form-price-start">
+          <div class="filters-form-price-start">
             <label for="price-start">От</label>
             <input type="number" value="0" id="price-start" name="price-start">
           </div>
-          <div class="options-form-price-upto">
+          <div class="filters-form-price-upto">
             <label for="price-upto">До</label>
             <input type="number" value="3000" id="price-upto" name="price-upto">
           </div>
@@ -60,17 +60,17 @@
     </section>
 
     <section class="offers">
-      <div class="offers-filter">
+      <div class="offers-sort">
         <h2>Найдено:3</h2>
-        <div class="offers-filter-specs">
+        <div class="offers-sort-specs">
           <p>Сортировка:</p>
-          <a class="offers-filter-price" href="#">По цене</a>
-          <a class="offers-filter-type" href="#">По типу</a>
-          <a class="offers-filter-rating" href="#">По рейтингу</a>
+          <a class="offers-sort-price" href="#">По цене</a>
+          <a class="offers-sort-type" href="#">По типу</a>
+          <a class="offers-sort-rating" href="#">По рейтингу</a>
         </div>
-        <div class="offers-filter-buttons">
-          <a class="filter-btn-inc btn-checked" href="#">По возрастанию</a>
-          <a class="filter-btn-dec" href="#">По убыванию</a>
+        <div class="offers-sort-buttons">
+          <a class="sort-btn-inc btn-checked" href="#">По возрастанию</a>
+          <a class="sort-btn-dec" href="#">По убыванию</a>
         </div>
       </div>
       <div class="offers-items">
