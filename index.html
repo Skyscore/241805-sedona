@@ -11,11 +11,11 @@
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <ul>
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Карта штата</li>
-          <li>Гостиницы</li>
+        <ul class="menu">
+          <li class="menu-item">Информация</li>
+          <li class="menu-item">Фото и видео</li>
+          <li class="menu-item">Карта штата</li>
+          <li class="menu-item">Гостиницы</li>
         </ul>
       </nav>
       <img class="header-logo" src="#" alt="City of Sedona">
@@ -23,63 +23,66 @@
   </header>
 
   <main class="container">
-    <section class="main-lead">
-      <div class="main-lead-english">
+    <section class="banner">
+      <div class="banner-picture">
         <img src="#" alt="Welcome to the gorgeous Sedona">
       </div>
-      <div class="main-lead-russian">
-        <h2 class="russian-headline">Седона - небольшой городок в Аризоне,<br>
+      <div class="banner-title">
+        <h2 class="heading-small">Седона - небольшой городок в Аризоне,<br>
       заслуживающий большего!</h2>
-        <p class="russian-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="banner-title-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
 
-    <section class="reasons-and-features">
-      <div class="reasons-big-item">
-        <div class="reasons-big-item-content">
-          <h3 class="reasons-item-name">Настоящий городок</h3>
-          <p class="reasons-item-number">- №1 -</p>
-          <p class="reasons-item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+    <section class="features">
+      <div class="features-row">
+        <div class="features-item features-item-dark">
+          <h3 class="features-item-title">Настоящий городок</h3>
+          <p class="features-item-index">- №1 -</p>
+          <p class="features-item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img class="reasons-big-item-img" src="#" alt="True town">
+        <img class="features-item-img" src="#" alt="True town">
       </div>
-      <div class="features">
-        <div class="features-item">
-          <b class="features-name">Жилье</b>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+      <div class="features-row">
+        <div class="features-item features-item-light">
+          <div class="features-icon features-icon-house"></div>
+          <h3 class="features-item-title">Жилье</h3>
+          <p class="features-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
-        <div class="features-item">
-          <b class="features-name">Еда</b>
-          <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        <div class="features-item features-item-light">
+          <div class="features-icon features-icon-food"></div>
+          <h3 class="features-item-title">Еда</h3>
+          <p class="features-item-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </div>
-        <div class="features-item">
-          <b class="features-name">Сувениры</b>
-          <p>Не только китайского, но и местного производства!</p>
-        </div>
-      </div>
-      <div class="reasons-big-item">
-        <img class="reasons-big-item-img" src="#" alt="Poco Diablo">
-        <div class="reasons-big-item-content">
-          <h3 class="reasons-item-name">Там есть мост дьявола</h3>
-          <p class="reasons-item-number">- №2 -</p>
-          <p class="reasons-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="features-item features-item-light">
+          <div class="features-icon features-icon-gift"></div>
+          <h3 class="features-item-title">Сувениры</h3>
+          <p class="features-item-description">Не только китайского, но и местного производства!</p>
         </div>
       </div>
-      <div class="reasons-small">
-        <div class="reasons-small-item">
-          <h3 class="reasons-item-name">Небольшая площадь</h3>
-          <p class="reasons-item-number">- №3 -</p>
-          <p class="reasons-item-description">Все достопримечательности находятся очень близко</p>
+      <div class="features-row">
+        <img class="features-item-img" src="#" alt="Poco Diablo">
+        <div class="features-item features-item-dark">
+          <h3 class="features-item-title">Там есть мост дьявола</h3>
+          <p class="features-item-index">- №2 -</p>
+          <p class="features-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div class="reasons-small-item">
-          <h3 class="reasons-item-name">Красивая дорога</h3>
-          <p class="reasons-item-number">- №4 -</p>
-          <p class="reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="features-row">
+        <div class="features-item features-item-light">
+          <h3 class="features-item-title">Небольшая площадь</h3>
+          <p class="features-item-index">- №3 -</p>
+          <p class="features-item-description">Все достопримечательности находятся очень близко</p>
         </div>
-        <div class="reasons-small-item">
-          <h3 class="reasons-item-name">Мало туристов</h3>
-          <p class="reasons-item-number">- №5 -</p>
-          <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
+        <div class="features-item features-item-light">
+          <h3 class="features-item-title">Красивая дорога</h3>
+          <p class="features-item-index">- №4 -</p>
+          <p class="features-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="features-item features-item-light">
+          <h3 class="features-item-title">Мало туристов</h3>
+          <p class="features-item-index">- №5 -</p>
+          <p class="features-item-description">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </div>
     </section>
@@ -90,25 +93,25 @@
         <p>Укажите примерные даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       </div>
       <div class="booking-search">
-        <h2>Поиск гостиницы в Седоне</h2>
-        <form class="booking-search-form" action="#" method="get">
-          <div class="search-form-in">
+        <button id="booking-btn" class="booking-btn">Поиск гостиницы в Седоне</button>
+        <form class="booking-form search-form search-form-opened" action="#" method="get">
+          <div class="search-form-item">
             <label for="search-form-in">Дата заезда</label>
             <input type="date" id="search-form-in" name="search-form-in" value="2016-04-24">
             <button type="button">calendar</button>
           </div>
-          <div class="search-form-out">
+          <div class="search-form-item">
             <label for="search-form-out">Дата выезда</label>
             <input type="date" id="search-form-out" name="search-form-out" value="2016-07-04">
             <button type="button">calendar</button>
           </div>
-          <div class="search-form-adults">
+          <div class="search-form-item search-form-item-age">
             <label for="search-form-adults">Взрослые</label>
             <button class="numeric-input-dec">-</button>
             <input type="number" class="numeric-input-value" id="search-form-adults" value="2">
             <button class="numeric-input-inc">+</button>
           </div>
-          <div class="search-form-kids">
+          <div class="search-form-item search-form-item-age">
             <label for="search-form-kids">Дети</label>
             <button class="numeric-input-dec">-</button>
             <input type="number" class="numeric-input-value" id="search-form-kids" value="0">
@@ -122,7 +125,7 @@
 
   <footer class="main-footer">
     <div class="container">
-      <section class="footer-hashtag">#VISITSEDONA</section>
+      <div class="footer-hashtag">#VISITSEDONA</div>
       <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#">Twitter</a>
         <a class="social-btn social-btn-fb" href="#">Facebook</a>
