@@ -4,6 +4,11 @@ body {
   line-height: 26px;
   font-weight: bold;
   font-size: 14px;
+  min-width: 1280px;
+  outline: 1px solid black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -12,4 +17,209 @@ h2 {
 
 h3 {
   font-size: 21px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid yellow;
+}
+
+.header-logo {
+  min-height: 70px;
+  float: right;
+  width: 138px;
+  height: 70px;
+}
+
+.menu-item {
+  display: inline-block;
+  min-height: 56px;
+  width: 239px;
+  outline: 1px solid red;
+  float: left;
+}
+
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.banner {
+  margin-top: 62px;
+}
+
+.banner-picture {
+  width: 458px;
+  height: 352px;
+  margin: 0 auto 145px;
+  background-color: #a1b7c9;
+}
+
+.banner-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.features-item {
+  width: 400px;
+  outline: 1px solid red;
+}
+
+.features-item-img {
+  width: 800px;
+}
+
+.features-item-dark {
+  min-height: 255px;
+}
+
+.features-row:nth-child(1) {
+  margin-bottom: 60px;
+}
+
+.features-item-dark:first-child,
+.features-item-img:last-child,
+.features-item-light {
+  float: left;
+}
+
+.features-item-img:first-child,
+.features-item-dark:last-child {
+  float: right;
+}
+
+.features-row {
+  outline: 1px solid blue;
+}
+
+.features-row:nth-child(2) {
+  margin-bottom: 84px;
+}
+
+.features-icon {
+  margin: 0 auto;
+  min-height: 75px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.features-icon-house {
+  background-image: url(../img/icon-house.png);
+  width: 75px;
+  height: 72px;
+}
+
+.features-icon-food {
+  background-image: url(../img/icon-burger.png);
+  width: 74px;
+  height: 69px;
+}
+
+.features-icon-gift {
+  background-image: url(../img/icon-gift.png);
+  width: 63px;
+  height: 75px;
+}
+
+.features-row:nth-child(4) {
+  padding-top: 47px;
+  padding-bottom: 62px;
+  background-color: #eeeeee;
+}
+
+.booking-intro {
+  padding-top: 53px;
+  padding-bottom: 50px;
+  outline: 1px solid pink;
+}
+
+.booking-btn {
+  width: 568px;
+  height: 86px;
+}
+
+.booking-form {
+  width: 568px;
+  min-height: 395px;
+  margin: 0 auto 0;
+  outline: 1px solid green;
+  padding-bottom: 78px;
+}
+
+.search-form-item {
+  width: 458px;
+  height: 38px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer {
+  padding-bottom: 36px;
+  padding-top: 36px;
+}
+
+.footer-hashtag {
+  margin-left: 132px;
+  margin-right: 255px;
+  min-height: 84px;
+  float: left;
+  width: 136px;
+  outline: 1px solid green;
+}
+
+.footer-social {
+  margin-right: 212px;
+  min-height: 84px;
+  float: left;
+  width: 150px;
+  outline: 1px solid pink;
+}
+
+.footer-copyright {
+  min-height: 84px;
+  width: 241px;
+  float: right;
+  outline: 1px solid yellow;
+  margin-right: 72px;
+}
+
+.footer-copyright p {
+  width: 74px;
+  margin: auto;
+  outline: 1px solid blue;
+  display: inline;
+  vertical-align: middle;
+}
+
+.copyright-btn {
+  width: 113px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  display: inline;
+  vertical-align: middle;
+}
+
+.filters {
+  margin-top: 15px;
+  min-height: 188px;
+}
+
+.filters-form-infrastructure {
+  min-height: 155px;
+  width: 240px;
+  float: left;
+}
+
+.filters-form-type {
+  min-height: 155px;
+  width: 288px;
+  float: left;
+}
+
+.filters-form-price {
+  min-height: 155px;
+  width: 328px;
+  float: right;
 }
