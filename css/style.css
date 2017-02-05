@@ -1,9 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "PT-Sans";
   color: black;
   line-height: 26px;
   font-weight: bold;
   font-size: 14px;
+  text-transform: uppercase;
   min-width: 1280px;
   outline: 1px solid black;
   text-align: center;
@@ -27,17 +38,28 @@ h3 {
 
 .header-logo {
   min-height: 70px;
-  float: right;
   width: 138px;
   height: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .menu-item {
-  display: inline-block;
   min-height: 56px;
-  width: 239px;
+  width: 240px;
   outline: 1px solid red;
   float: left;
+}
+
+.menu-item:nth-child(2) {
+  margin-right: 240px;
 }
 
 .clearfix::after {
@@ -69,6 +91,7 @@ h3 {
 
 .features-item-img {
   width: 800px;
+  display: block;
 }
 
 .features-item-dark {
@@ -79,14 +102,11 @@ h3 {
   margin-bottom: 60px;
 }
 
-.features-item-dark:first-child,
-.features-item-img:last-child,
-.features-item-light {
+.features-item {
   float: left;
 }
 
-.features-item-img:first-child,
-.features-item-dark:last-child {
+.features-item-last {
   float: right;
 }
 
@@ -129,6 +149,12 @@ h3 {
   background-color: #eeeeee;
 }
 
+.booking-search {
+  position: relative;
+  max-width: 568px;
+  margin: 0 auto;
+}
+
 .booking-intro {
   padding-top: 53px;
   padding-bottom: 50px;
@@ -146,6 +172,9 @@ h3 {
   margin: 0 auto 0;
   outline: 1px solid green;
   padding-bottom: 78px;
+  position: absolute;
+  top: 86px;
+  background: #fff;
 }
 
 .search-form-item {
@@ -155,9 +184,15 @@ h3 {
   margin-right: auto;
 }
 
+.map {
+  max-height: 474px;
+}
+
 .main-footer {
-  padding-bottom: 36px;
-  padding-top: 36px;
+  padding: 18px 0;
+  background: #fff;
+  position: relative;
+  opacity: 0.9;
 }
 
 .footer-hashtag {
@@ -202,24 +237,119 @@ h3 {
 }
 
 .filters {
-  margin-top: 15px;
-  min-height: 188px;
+  margin: 0;
+  padding: 0;
+}
+
+.filters-form {
+  padding-top: 30px;
+  padding-bottom: 32px;
+  outline: 1px solid blue;
+}
+
+fieldset {
+  border: 0;
 }
 
 .filters-form-infrastructure {
+  margin: 0 0 0 72px;
   min-height: 155px;
   width: 240px;
   float: left;
+  outline: 1px solid green;
 }
 
 .filters-form-type {
   min-height: 155px;
   width: 288px;
   float: left;
+  margin: 0 200px 0 0;
+  outline: 1px solid green;
 }
 
 .filters-form-price {
   min-height: 155px;
   width: 328px;
   float: right;
+  margin: 0 72px 0 0;
+  outline: 1px solid green;
 }
+
+.offers {
+  margin: 0;
+  padding: 0;
+}
+
+.offers-sort {
+  padding-top: 32px;
+  min-height: 87px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.offers-sort h2 {
+  margin: 0 0 0 72px;
+  padding: 0;
+  float: left;
+}
+
+.offers-sort-options {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.offers-sort-options p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-buttons {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-item {
+  min-height: 150px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.offer-item img {
+  float: left;
+  padding-top: 30px;
+  margin-left: 72px;
+}
+
+.offer-item-specifics {
+  float: left;
+  padding: 0 0 0 30px;
+}
+
+.offer-item-ratings {
+  float: right;
+}
+
+.offer-item-ratings ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.offer-item-type {
+  display: inline-block;
+  width: 110px;
+  outline: 1px solid blue;
+  margin-right: 6px;
+}
+
+.offer-item-price {
+  display: inline-block;
+  outline: 1px solid blue;
+}
+
+.rating-star {
+  display: inline;
+}
+
