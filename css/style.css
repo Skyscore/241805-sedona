@@ -320,6 +320,7 @@ fieldset {
   float: left;
   padding-top: 30px;
   margin-left: 72px;
+  vertical-align: top;
 }
 
 .offer-item-specifics {
@@ -339,6 +340,7 @@ fieldset {
 
 .offer-item-type {
   display: inline-block;
+  vertical-align: middle;
   width: 110px;
   outline: 1px solid blue;
   margin-right: 6px;
@@ -346,6 +348,7 @@ fieldset {
 
 .offer-item-price {
   display: inline-block;
+  vertical-align: middle;
   outline: 1px solid blue;
 }
 
