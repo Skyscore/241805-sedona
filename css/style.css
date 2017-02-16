@@ -26,7 +26,6 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  outline: 1px solid yellow;
 }
 
 .header-logo {
@@ -64,7 +63,7 @@ body {
   font-size: 14px;
   font-family: "PT Sans";
   color: black;
-  font-weight: bold;
+  font-weight: medium;
   text-transform: uppercase;
   line-height: 26px;
   text-align: center;
@@ -91,6 +90,22 @@ body {
   margin: 0 auto 80px;
 }
 
+.banner-picture:before {
+  content: "&mdash;";
+  position: absolute;
+  top: 190px;
+  left: 630px;
+  color: #766357;
+}
+
+.banner-picture:after {
+  content: "&mdash;";
+  position: absolute;
+  top: 190px;
+  left: 870px;
+  color: #766357;
+}
+
 .banner-title {
   text-align: center;
   padding-top: 60px;
@@ -114,7 +129,6 @@ body {
 
 .features-item {
   width: 400px;
-  outline: 1px solid red;
   font-weight: normal;
 }
 
@@ -130,7 +144,10 @@ body {
 .features-item-light .features-item-title {
   padding-top: 27px;
   max-width: 150px;
+}
 
+.features-row:nth-child(4) .features-item-title{
+  padding-top: 0px;
 }
 
 .features-item-index {
@@ -140,11 +157,22 @@ body {
 .features-item-description {
   max-width: 301px;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+}
+
+.features-item-light .features-item-description {
+  padding-top: 22px;
 }
 
 .features-item-last .features-item-description {
   max-width: 305px;
   margin: 0 auto;
+}
+
+.features-row:nth-child(4) .features-item-description {
+  padding-top: 6px;
 }
 
 .features-item-img {
@@ -158,9 +186,6 @@ body {
   color: #ffffff;
 }
 
-.features-row:nth-child(1) {
-  margin-bottom: 60px;
-}
 
 .features-item {
   float: left;
@@ -170,12 +195,10 @@ body {
   float: right;
 }
 
-.features-row {
-  outline: 1px solid blue;
-}
-
 .features-row:nth-child(2) {
-  margin-bottom: 84px;
+  padding-top: 60px;
+  padding-bottom: 84px;
+  background: white;
 }
 
 .features-row h3 {
@@ -189,29 +212,35 @@ body {
   min-height: 75px;
   background-repeat: no-repeat;
   vertical-align: middle;
+  position: relative;
 }
 
 .features-icon-house {
   background-image: url(../img/icon-house.png);
   width: 75px;
   height: 72px;
+  left: -1px;
 }
 
 .features-icon-food {
   background-image: url(../img/icon-burger.png);
   width: 74px;
   height: 69px;
+  left: -1px;
+  top: 1px;
 }
 
 .features-icon-gift {
   background-image: url(../img/icon-gift.png);
   width: 63px;
   height: 75px;
+  top: -4px;
+  left: -1px;
 }
 
 .features-row:nth-child(4) {
   padding-top: 47px;
-  padding-bottom: 62px;
+  padding-bottom: 58px;
   background-color: #eeeeee;
 }
 
@@ -222,24 +251,49 @@ body {
 }
 
 .booking-intro {
-  padding-top: 53px;
-  padding-bottom: 50px;
-  outline: 1px solid pink;
+  padding-top: 58px;
+  padding-bottom: 136px;
+  background: white;
+}
+
+.booking-intro h2 {
+  font-size: 30px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.booking-intro p {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-weight: normal;
+  max-width: 440px;
 }
 
 .booking-btn {
   width: 568px;
   height: 86px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: none;
+  background: #766357;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: white;
 }
 
 .booking-form {
   width: 568px;
   min-height: 395px;
   margin: 0 auto 0;
-  outline: 1px solid green;
   padding-bottom: 78px;
   position: absolute;
-  top: 86px;
+  top: 0px;
   background: #fff;
 }
 
@@ -267,7 +321,9 @@ body {
   min-height: 84px;
   float: left;
   width: 136px;
-  outline: 1px solid green;
+  padding-top: 30px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .footer-social {
@@ -276,7 +332,7 @@ body {
   float: left;
   width: 150px;
   font-size: 0;
-  outline: 1px solid pink;
+  padding-top: 18px;
 }
 
 .social-btn {
@@ -293,7 +349,7 @@ body {
 }
 
 .social-btn-fb {
-  background: #81b3d2 url(../img/icon-facebook.png) no-repeat center;
+  background: #81b3d2 url(../img/icon-facebook.png) no-repeat center 13px;
 }
 
 .social-btn-yt {
@@ -313,22 +369,26 @@ body {
   min-height: 84px;
   width: 241px;
   float: right;
-  outline: 1px solid yellow;
-  margin-right: 72px;
+  margin-right: 73px;
+  padding-top: 23px;
+  position: relative;
+  left: -6px;
 }
 
 .footer-copyright p {
   width: 74px;
-  margin: auto;
-  outline: 1px solid blue;
+  margin-right: 4px;
   display: inline;
   vertical-align: middle;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 0px;
 }
 
 .copyright-btn {
   width: 113px;
   margin: 0 auto;
-  outline: 1px solid red;
   display: inline;
   vertical-align: middle;
 }
