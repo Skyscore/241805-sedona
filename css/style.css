@@ -19,12 +19,15 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: #a1b7c9 url("../img/background-big.jpg") no-repeat center top;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-header .container {
+  position: relative;
 }
 
 .header-logo {
@@ -35,6 +38,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
+  z-index: 1
 }
 
 .menu {
@@ -85,7 +89,21 @@ body {
 
 .banner {
   padding-top: 76px;
-  background: url(../img/background-shape.png) no-repeat 0px 451px;
+  position: relative;
+  background: #a1b7c9 url("../img/background-big.jpg") no-repeat center -56px;
+
+}
+
+.banner::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(../img/background-shape.png) no-repeat center 451px;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  right: 0;
 }
 
 .banner-picture {
@@ -113,6 +131,10 @@ body {
   line-height: 26px;
   font-weight: normal;
   margin: 0;
+}
+
+.filters {
+  background: #a1b7c9 url(../img/filter-background.png) no-repeat center -56px;
 }
 
 .features-item {
@@ -384,6 +406,13 @@ body {
 .filters {
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+.filters legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .filters-form {
@@ -391,8 +420,14 @@ body {
   padding-bottom: 32px;
 }
 
+.filters-form label {
+  display: inline-block;
+}
+
 fieldset {
   border: 0;
+  text-align: left;
+  margin: 0;
 }
 
 .filters-form-infrastructure {
@@ -409,17 +444,15 @@ fieldset {
   margin: 0 200px 0 0;
 }
 
+/*
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
   color: #ffffff;
+  margin: 0;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
 }
 
 .price-controls {
@@ -523,6 +556,7 @@ fieldset {
   color: #000000;
   background: #ffffff;
 }
+*/
 
 .offers {
   margin: 0;
