@@ -16,7 +16,6 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   min-width: 1280px;
-  outline: 1px solid black;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -73,6 +72,11 @@ body {
   color: #81b3d2;
 }
 
+.menu-item-active a,
+.menu-item-active a:hover {
+  color: #766357;
+}
+
 .clearfix::after {
   clear: both;
   display: table;
@@ -88,22 +92,6 @@ body {
   width: 458px;
   height: 352px;
   margin: 0 auto 80px;
-}
-
-.banner-picture:before {
-  content: "&mdash;";
-  position: absolute;
-  top: 190px;
-  left: 630px;
-  color: #766357;
-}
-
-.banner-picture:after {
-  content: "&mdash;";
-  position: absolute;
-  top: 190px;
-  left: 870px;
-  color: #766357;
 }
 
 .banner-title {
@@ -401,7 +389,6 @@ body {
 .filters-form {
   padding-top: 30px;
   padding-bottom: 32px;
-  outline: 1px solid blue;
 }
 
 fieldset {
@@ -413,7 +400,6 @@ fieldset {
   min-height: 155px;
   width: 240px;
   float: left;
-  outline: 1px solid green;
 }
 
 .filters-form-type {
@@ -421,15 +407,121 @@ fieldset {
   width: 288px;
   float: left;
   margin: 0 200px 0 0;
-  outline: 1px solid green;
 }
 
-.filters-form-price {
-  min-height: 155px;
-  width: 328px;
-  float: right;
-  margin: 0 72px 0 0;
-  outline: 1px solid green;
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+  color: #ffffff;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .offers {
@@ -499,14 +591,12 @@ fieldset {
   display: inline-block;
   vertical-align: middle;
   width: 110px;
-  outline: 1px solid blue;
   margin-right: 6px;
 }
 
 .offer-item-price {
   display: inline-block;
   vertical-align: middle;
-  outline: 1px solid blue;
 }
 
 .rating-star {
