@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "PT-Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: black;
   line-height: 26px;
   font-weight: bold;
@@ -36,6 +36,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 0;
 }
 
 .menu {
@@ -93,13 +94,57 @@ body {
 .banner-title {
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 55px;
+  padding-bottom: 52px;
   background: #ffffff;
+}
+
+.heading-small {
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.banner-title-subtitle {
+  padding-top: 26px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 0;
 }
 
 .features-item {
   width: 400px;
   outline: 1px solid red;
+  font-weight: normal;
+}
+
+.features-item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  max-width: 164px;
+  margin: 0 auto;
+  padding-top: 53px;
+}
+
+.features-item-light .features-item-title {
+  padding-top: 27px;
+  max-width: 150px;
+
+}
+
+.features-item-index {
+  padding-top: 6px;
+}
+
+.features-item-description {
+  max-width: 301px;
+  margin: 0 auto;
+}
+
+.features-item-last .features-item-description {
+  max-width: 305px;
+  margin: 0 auto;
 }
 
 .features-item-img {
@@ -230,6 +275,7 @@ body {
   min-height: 84px;
   float: left;
   width: 150px;
+  font-size: 0;
   outline: 1px solid pink;
 }
 
@@ -237,8 +283,7 @@ body {
   display: inline-block;
   width: 46px;
   height: 48px;
-  margin: 0 6px;
-  font-size: 0;
+  margin: 0 3px;
   vertical-align: top;
   text-decoration: none;
 }
@@ -255,9 +300,13 @@ body {
   background: #81b3d2 url(../img/icon-youtube.png) no-repeat center;
 }
 
+.social-btn:first-child {
+  margin-left: 0;
+}
 
-.footer-social:last-child {
-  margin: 0px;
+
+.social-btn:last-child {
+  margin-right: 0;
 }
 
 .footer-copyright {
