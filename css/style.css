@@ -76,8 +76,13 @@ body {
   color: #81b3d2;
 }
 
+.menu-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .menu-item-active a,
-.menu-item-active a:hover {
+.menu-item-active a:hover,
+.menu-item-active a:active {
   color: #766357;
 }
 
@@ -366,6 +371,28 @@ body {
   background: #81b3d2 url(../img/icon-youtube.png) no-repeat center;
 }
 
+.social-btn-tw:hover  {
+  background: #669ec0 url(../img/icon-twitter.png) no-repeat center;
+}
+
+.social-btn-fb:hover {
+  background: #669ec0 url(../img/icon-facebook.png) no-repeat center 13px;
+}
+
+.social-btn-yt:hover {
+  background: #669ec0 url(../img/icon-youtube.png) no-repeat center;
+}
+
+.social-btn-tw:active  {
+  background-color: #5496bd url(../img/icon-twitter-fade.png) no-repeat center;
+}
+.social-btn-fb:active {
+  background-color: #5496bd url(../img/icon-facebook-fade.png) no-repeat center 13px;
+}
+.social-btn-yt:active {
+  background-color: #5496bd url(../img/icon-youtube-fade.png) no-repeat center;
+}
+
 .social-btn:first-child {
   margin-left: 0;
 }
@@ -397,10 +424,20 @@ body {
 }
 
 .copyright-btn {
+  background: url(../img/footer-logo-academy.png);
   width: 113px;
+  height: 39px;
   margin: 0 auto;
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
+}
+
+.copyright-btn:hover {
+  background: url(../img/footer-logo-academy-hover.png);
+}
+
+.copyright-btn:active {
+  background: url(../img/footer-logo-academy-active.png);
 }
 
 .filters {
@@ -631,6 +668,15 @@ fieldset {
   margin-left: 33px;
 }
 
+.offers-sort-option:hover {
+  color: #81b3d2;
+}
+
+.offers-sort-option:active {
+  color: #000000;
+  border-bottom: 0;
+}
+
 .offers-sort-option-active {
   border-bottom: 0;
   color: #bfd9e8;
@@ -665,6 +711,18 @@ fieldset {
   padding-top: 24px;
   margin: 0;
   text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  color: black;
+}
+
+..offer-item-title:hover {
+  color: #81b3d2;
+}
+
+..offer-item-title:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .offer-item-ratings {
@@ -720,6 +778,14 @@ fieldset {
   margin-right: 6px;
 }
 
+.btn-primary:hover {
+  background: #669ec0;
+}
+
+.btn-primary:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .btn-secondary {
   background: #766357;
@@ -727,8 +793,31 @@ fieldset {
   height: 27px;
 }
 
-.rating-star {
-  display: inline;
+.btn-secondary:hover {
+  background: #604e43;
+}
+
+.btn-secondary:active {
+  background: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rating-stars {
+  margin: 27px 73px 47px 0;
+  display: block;
+  height: 18px;
+}
+
+.stars-4 {
+  background: url(../img/stars-4.png) no-repeat top right;
+}
+
+.stars-3 {
+  background: url(../img/stars-3.png) no-repeat top right;
+}
+
+.stars-2 {
+  background: url(../img/stars-2.png) no-repeat top right;
 }
 
 .user-rating {
