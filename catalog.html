@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<div class="wrapper clearfix">
 
   <header class="main-header">
     <div class="container clearfix">
@@ -25,44 +26,44 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
     <section class="filters">
       <form class="filters-form clearfix" action="#" method="get">
         <fieldset class="filters-form-infrastructure">
           <legend>Инфраструктура:</legend>
-          <div class="form-item">
+          <label class="form-item">
             <input type="checkbox" checked id="pool" name="pool">
             <span class="checkbox-indicator"></span>
-            <label for="pool">Бассейн</label>
-          </div>
-          <div class="form-item">
+            <span class="form-item-name">Бассейн</span>
+          </label>
+          <label class="form-item">
             <input type="checkbox" id="parking" name="parking">
             <span class="checkbox-indicator"></span>
-            <label for="parking">Парковка</label>
-          </div>
-          <div class="form-item">
+            <span class="form-item-name">Парковка</span>
+          </label>
+          <label class="form-item">
             <input type="checkbox" id="wifi" name="wifi">
             <span class="checkbox-indicator"></span>
-            <label for="wifi">Wi-Fi</label>
-          </div>
+            <span class="form-item-name">Wi-Fi</span>
+          </label>
         </fieldset>
         <fieldset class="filters-form-type">
           <legend>Тип жилья:</legend>
-          <div class="form-item">
+          <label class="form-item">
             <input type="checkbox" checked id="hotel" name="hotel">
             <span class="checkbox-indicator"></span>
-            <label for="hotel">Гостиница</label>
-          </div>
-          <div class="form-item">
+            <span class="form-item-name">Гостиница</span>
+          </label>
+          <label class="form-item">
             <input type="checkbox" checked id="motel" name="motel">
             <span class="checkbox-indicator"></span>
-            <label for="motel">Мотель</label>
-          </div>
-          <div class="form-item">
+            <span class="form-item-name">Мотель</span>
+          </label>
+          <label class="form-item">
             <input type="checkbox" checked id="apartment" name="apartment">
             <span class="checkbox-indicator"></span>
-            <label for="apartment">Апартаменты</label>
-          </div>
+            <span class="form-item-name">Апартаменты</span>
+          </label>
         </fieldset>
         <fieldset class="filter-range">
           <legend class="filter-range-title">Стоимость в сутки (р):</div>
@@ -150,7 +151,6 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container clearfix">
       <div class="footer-hashtag">#VISITSEDONA</div>
       <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#">Twitter</a>
@@ -161,8 +161,8 @@
         <p>Website by</p>
         <a class="copyright-btn" href="http://htmlacademy.ru"></a>
       </section>
-    </div>
   </footer>
+</div>
 </body>
 
 </html>
