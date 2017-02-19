@@ -232,7 +232,7 @@ body {
 }
 
 .features-icon-food {
-  background-image: url(../img/icon-burger.png);
+  background-image: url("../img/icon-burger.png");
   width: 74px;
   height: 69px;
   left: -1px;
@@ -240,7 +240,7 @@ body {
 }
 
 .features-icon-gift {
-  background-image: url(../img/icon-gift.png);
+  background-image: url("../img/icon-gift.png");
   width: 63px;
   height: 75px;
   top: -4px;
@@ -579,7 +579,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin-bottom: 25px;
+  margin: 20px 0;
 }
 
 fieldset {
@@ -641,13 +641,19 @@ fieldset {
   min-height: 155px;
   width: 240px;
   float: left;
+  padding: 0;
 }
 
 .filters-form-type {
   min-height: 155px;
   width: 288px;
   float: left;
-  margin: 0 200px 0 0;
+  margin: 0 200px 0 15px;
+  padding: 0;
+}
+
+.form-item-name {
+  padding-left: 15px;
 }
 
 .form-item input[type="checkbox"] {
@@ -661,6 +667,7 @@ fieldset {
   height: 22px;
   background: url("../img/checkboxes.png") -30px -24px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .form-item input[type="checkbox"]:checked + .checkbox-indicator {
