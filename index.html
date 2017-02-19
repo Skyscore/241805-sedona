@@ -104,25 +104,25 @@
         <form class="booking-form search-form search-form-opened" action="#" method="get">
           <div class="search-form-item">
             <label for="search-form-in">Дата заезда:</label>
-            <input type="text" id="search-form-in" name="search-form-in" value="24 апреля 2016">
+            <input type="text" id="search-form-in" name="search-form-in" value="24 апреля 2017">
             <button type="button">calendar</button>
           </div>
           <div class="search-form-item">
             <label for="search-form-out">Дата выезда:</label>
-            <input type="text" id="search-form-out" name="search-form-out" value="4 июля 2016">
+            <input type="text" id="search-form-out" name="search-form-out" value="4 июля 2017">
             <button type="button">calendar</button>
           </div>
           <div class="search-form-item search-form-item-age">
             <label for="search-form-adults">Взрослые:</label>
-            <button class="numeric-input-dec">-</button>
+            <button type="button" class="numeric-input-dec">-</button>
             <input type="number" class="numeric-input-value" id="search-form-adults" value="2">
-            <button class="numeric-input-inc">+</button>
+            <button type="button" class="numeric-input-inc">+</button>
           </div>
           <div class="search-form-item search-form-item-age">
-            <label for="search-form-kids">Дети:</label>
-            <button class="numeric-input-dec">-</button>
+            <label class="search-form-kids" for="search-form-kids">Дети:</label>
+            <button type="button" class="numeric-input-dec">-</button>
             <input type="number" class="numeric-input-value" id="search-form-kids" value="0">
-            <button class="numeric-input-inc">+</button>
+            <button type="button" class="numeric-input-inc">+</button>
           </div>
           <input type="submit" value="Найти">
         </form>
