@@ -718,7 +718,7 @@ fieldset {
   line-height: 21px;
   vertical-align: top;
   cursor: pointer;
-  width: 90px;
+  width: 155px;
 }
 
 .price-controls .min-price {
@@ -726,11 +726,12 @@ fieldset {
 }
 
 .price-controls .max-price {
-  padding-left: 117px;
+  padding-left: 58px;
 }
 
 .price-controls input {
-  width: 60px;
+  width: 50px;
+  padding-top: 6px;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -738,10 +739,10 @@ fieldset {
   border: none;
 }
 
-/*
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+  padding-left: 10px;
 }
 
 .range-controls .scale {
@@ -758,8 +759,8 @@ fieldset {
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   background: #ababab;
   border: 8px solid #fff;
   border-radius: 50%;
@@ -767,16 +768,16 @@ fieldset {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
 .range-toggle-min {
-  left: 0;
+  left: 10px;
 }
 
 .range-toggle-max {
   left: 80%;
-}
-
-.range-toggle:hover {
-  background: #1c4f80;
 }
 
 .btn-transparent {
@@ -798,7 +799,6 @@ fieldset {
   color: #000;
   background: #fff;
 }
-*/
 
 .offers {
   margin: 0;
@@ -979,19 +979,18 @@ fieldset {
 .rating-stars {
   margin: 27px 73px 47px 0;
   display: block;
-  height: 18px;
+  width: 85px;
+  height: 17px;
 }
 
-.stars-4 {
-  background: url("../img/stars-4.png") no-repeat top right;
+.rating-star {
+  background: url("../img/star.png") no-repeat top right;
+  padding: 0;
+  margin: 0;
 }
 
-.stars-3 {
-  background: url("../img/stars-3.png") no-repeat top right;
-}
-
-.stars-2 {
-  background: url("../img/stars-2.png") no-repeat top right;
+.hidden {
+  visibility: hidden;
 }
 
 .user-rating {
