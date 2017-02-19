@@ -152,7 +152,7 @@ body {
 }
 
 .features-item-light .features-item-title {
-  padding-top: 27px;
+  padding-top: 25px;
   max-width: 150px;
 }
 
@@ -368,7 +368,23 @@ body {
   background-position: -7px -30px;
 }
 
+.numeric-input-dec:hover {
+  background-position: -7px -7px;
+}
+
+.numeric-input-dec:active {
+  background-position: -7px 16px;
+}
+
 .numeric-input-inc {
+  background-position: -7px -117px;
+}
+
+.numeric-input-inc:hover {
+  background-position: -7px -117px;
+}
+
+.numeric-input-inc:active {
   background-position: -7px -117px;
 }
 
@@ -581,14 +597,14 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  margin: 0;
+  margin: 2px 0 5px;
   padding: 0;
-  display: inline-block;
+  display: block;
 }
 
 .filters-form {
-  padding-top: 30px;
-  padding-bottom: 18px;
+  padding-top: 25px;
+  padding-bottom: 12px;
   text-align: left;
 }
 
@@ -601,7 +617,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin: 20px 0;
+  margin: 21px 0;
 }
 
 .filters-form-field {
@@ -638,7 +654,7 @@ body {
   font-size: 0;
   position: absolute;
   top: 5px;
-  right: 0px;
+  right: 0;
 }
 
 .btn-sort-desc.btn-checked {
@@ -681,12 +697,14 @@ body {
   min-height: 155px;
   width: 288px;
   float: left;
-  margin: 0 200px 0 15px;
+  margin-left: 15px;
   padding: 0;
 }
 
 .form-item-name {
-  padding-left: 15px;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .form-item input[type="checkbox"] {
@@ -715,17 +733,17 @@ body {
   background-position: -2px 0;
 }
 
-
 .filter-range {
-  width: 328px;
+  float: right;
+  margin-right: 75px;
   color: #fff;
-  margin: 0;
   padding: 0;
 }
 
 .filter-range-title {
+  margin-bottom: 10px;
   font-size: 16px;
-  text-align: 21px;
+  line-height: 21px;
 }
 
 .price-controls {
