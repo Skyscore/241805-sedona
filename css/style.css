@@ -125,6 +125,8 @@ body {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
+  width: 450px;
+  margin: 0 auto
 }
 
 .banner-title-subtitle {
@@ -164,6 +166,7 @@ body {
 
 .features-item-index {
   padding-top: 6px;
+  line-height: 21px;
 }
 
 .features-item-description {
@@ -275,7 +278,7 @@ body {
 
 .booking-intro p {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   margin: 0 auto;
   padding-top: 30px;
   font-weight: normal;
@@ -320,7 +323,7 @@ body {
 .search-form-item label {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 12px;
   font-size: 14px;
 }
 
@@ -375,7 +378,7 @@ body {
   font-size: 0;
   background: #f2f2f2 url("../img/inc-dec.png") no-repeat;
   border: 0;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .numeric-input-dec {
@@ -411,8 +414,9 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  padding: 0 0 0 7px;
+  padding: 0;
   text-align: center;
+  vertical-align: middle
 }
 
 .numeric-input-value:hover {
@@ -753,6 +757,7 @@ body {
   margin-right: 75px;
   color: #fff;
   padding: 0;
+  width: 328px;
 }
 
 .filter-range-title {
@@ -793,10 +798,12 @@ body {
 }
 
 .price-controls .min-price {
+  font-weight: normal;
   padding-left: 65px;
 }
 
 .price-controls .max-price {
+  font-weight: normal;
   padding-left: 58px;
 }
 
@@ -806,6 +813,7 @@ body {
   margin: 0;
   color: inherit;
   font: inherit;
+  font-weight: normal;
   background: none;
   border: none;
 }
@@ -933,9 +941,9 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.offer-item img {
+.item-preview-img {
   float: left;
-  padding-top: 28px;
+  margin-top: 28px;
   margin-left: 72px;
   vertical-align: top;
 }
