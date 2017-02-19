@@ -421,7 +421,7 @@ body {
   background: white;
 }
 
-.search-form-item button[type="button"] {
+.calender-button {
   font-size: 0;
   position: absolute;
   top: 8px;
@@ -432,7 +432,7 @@ body {
   border: 0;
 }
 
-.search-form-item button[type="button"]:hover {
+.calender-button:hover {
   font-size: 0;
   position: absolute;
   top: 8px;
@@ -443,7 +443,7 @@ body {
   border: 0;
 }
 
-.search-form-item button[type="button"]:active {
+.calender-button:active {
   font-size: 0;
   position: absolute;
   top: 8px;
