@@ -566,7 +566,7 @@ body {
 
 .filters-form {
   padding-top: 30px;
-  padding-bottom: 32px;
+  padding-bottom: 18px;
   text-align: left;
 }
 
@@ -590,6 +590,13 @@ fieldset {
   justify-content: space-between;
 }
 
+.sort-buttons {
+  float: right;
+  margin: 0 73px 0 0;
+  padding: 0;
+  position: relative;
+}
+
 .btn-sort-asc {
   width: 0;
   height: 0;
@@ -597,6 +604,9 @@ fieldset {
   border-width: 0 5px 10px;
   border-color: transparent transparent #81b3d2;
   font-size: 0;
+  position: absolute;
+  top: 0;
+  right: 12px;
 }
 
 .btn-sort-desc {
@@ -606,14 +616,16 @@ fieldset {
   border-width: 10px 5px 0;
   border-color: #81b3d2 transparent transparent;
   font-size: 0;
+  position: absolute;
+  top: 0;
 }
 
 .btn-sort-desc.btn-checked {
-  border-top-color: gray;
+  border-top-color: #cccccc;
 }
 
 .btn-sort-asc.btn-checked {
-  border-bottom-color: gray;
+  border-bottom-color: #cccccc;
 }
 
 .btn-sort-desc:hover,
@@ -857,12 +869,6 @@ fieldset {
   color: #bfd9e8;
 }
 
-.sort-buttons {
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
 .offer-item {
   min-height: 150px;
   border-bottom: 1px solid #e5e5e5;
@@ -987,6 +993,7 @@ fieldset {
   background: url("../img/star.png") no-repeat top right;
   padding: 0;
   margin: 0;
+  width: 17px;
 }
 
 .hidden {
