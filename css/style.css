@@ -555,7 +555,7 @@ body {
   color: white;
 }
 
-.filters legend {
+.checkboxed-filter {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -682,53 +682,55 @@ fieldset {
   background-position: -2px 0;
 }
 
-/*
+
 .filter-range {
-  width: 330px;
+  width: 328px;
   color: #fff;
   margin: 0;
 }
 
-.filter-range-title {
-  margin-bottom: 9px;
-}
-
 .price-controls {
+  position: relative;
+  width: 318px;
   height: 36px;
   margin-bottom: 20px;
+  margin-left: 10px;
   font-size: 0;
   border: 2px solid #fff;
   border-radius: 2px;
-  position: relative;
 }
 
 .price-controls::after {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 22px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
   background: #fff;
+  transform: translate(-50%, -50%);
+
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
+  width: 90px;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
+.price-controls .min-price {
   padding-left: 65px;
 }
 
+.price-controls .max-price {
+  padding-left: 117px;
+}
+
 .price-controls input {
-  width: 50px;
+  width: 60px;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -736,6 +738,7 @@ fieldset {
   border: none;
 }
 
+/*
 .range-controls {
   position: relative;
   margin-bottom: 32px;
@@ -780,6 +783,7 @@ fieldset {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
+  font-family: inherit;
   font-size: 14px;
   line-height: 20px;
   color: #fff;
