@@ -288,6 +288,7 @@ body {
   left: 0;
   border: none;
   background: #766357;
+  font-family: inherit;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -337,10 +338,20 @@ body {
   padding-left: 12px;
   border: 0;
   background: #f2f2f2;
+  font-family: inherit;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.search-form-item input[type="text"]:hover {
+  background: #ebebeb;
+}
+
+.search-form-item input[type="text"]:focus {
+  border: 2px solid #e5e5e5;
+  background: white;
 }
 
 .numeric-input-dec,
@@ -366,10 +377,20 @@ body {
   height: 38px;
   border: 0;
   background: #f2f2f2;
+  font-family: inherit;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   padding: 0;
+}
+
+.search-form-item input[type="number"]:hover {
+  background: #ebebeb;
+}
+
+.search-form-item input[type="number"]:focus {
+  border: 2px solid #e5e5e5;
+  background: white;
 }
 
 .search-form-item button[type="button"] {
@@ -409,6 +430,7 @@ body {
   width: 458px;
   height: 58px;
   border: 0;
+  font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -571,7 +593,7 @@ body {
 }
 
 .filters-form label {
-  display: inline-block;
+  display: block;
 }
 
 .form-item {
@@ -582,12 +604,10 @@ body {
   margin: 20px 0;
 }
 
-fieldset {
+.filters-form-field {
   border: 0;
   margin: 0;
   width: 25px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .sort-buttons {
@@ -605,8 +625,8 @@ fieldset {
   border-color: transparent transparent #81b3d2;
   font-size: 0;
   position: absolute;
-  top: 0;
-  right: 12px;
+  top: 5px;
+  right: 21px;
 }
 
 .btn-sort-desc {
@@ -617,15 +637,16 @@ fieldset {
   border-color: #81b3d2 transparent transparent;
   font-size: 0;
   position: absolute;
-  top: 0;
+  top: 5px;
+  right: 0px;
 }
 
 .btn-sort-desc.btn-checked {
-  border-top-color: #cccccc;
+  border-top-color: #ccc;
 }
 
 .btn-sort-asc.btn-checked {
-  border-bottom-color: #cccccc;
+  border-bottom-color: #ccc;
 }
 
 .btn-sort-desc:hover,
@@ -699,6 +720,12 @@ fieldset {
   width: 328px;
   color: #fff;
   margin: 0;
+  padding: 0;
+}
+
+.filter-range-title {
+  font-size: 16px;
+  text-align: 21px;
 }
 
 .price-controls {
@@ -983,17 +1010,20 @@ fieldset {
 }
 
 .rating-stars {
-  margin: 27px 73px 47px 0;
+  margin: 26px 0 47px 0;
   display: block;
-  width: 85px;
+  width: 110px;
   height: 17px;
+  font-size: 0;
 }
 
 .rating-star {
   background: url("../img/star.png") no-repeat top right;
   padding: 0;
-  margin: 0;
+  margin-left: 5px;
+  display: inline-block;
   width: 17px;
+  height: 17px;
 }
 
 .hidden {
